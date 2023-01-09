@@ -1,3 +1,13 @@
+i {
+  color: #fff;
+}
+p {
+  color: #fff;
+}
+body {
+  margin: 0px;
+  font-family: Roboto Slab;
+}
 .header {
   height: 40px;
   background-color: #323233;
@@ -22,7 +32,6 @@
   /* width: 1000px; */
   margin: auto;
 }
-
 .navbar {
   height: 100px;
   width: 100%;
@@ -45,13 +54,20 @@ ul {
   color: #fff;
   margin: 10px;
 }
-i {
-  color: #fff;
+.imgs {
+  /* display: flex; */
+  width: 100%;
 }
-p {
-  color: #fff;
+.banner1 {
+  position: relative;
 }
-body {
-  margin: 0px;
-  font-family: Roboto Slab;
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #222222;
+  opacity: 0.73;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
