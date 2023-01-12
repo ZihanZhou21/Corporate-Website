@@ -30,18 +30,18 @@ body {
 .container {
   display: grid;
   position: relative;
-
   /* width: 1000px; */
   margin: auto;
 }
 .navbar {
   height: 100px;
   width: 100%;
-  /* background-color: rgb(138, 192, 141); */
+
+  background-color: rgb(138, 192, 141);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
 }
 .logo {
   display: flex;
@@ -61,33 +61,32 @@ ul {
   /* display: flex; */
   width: 100%;
 }
-.slogan {
-  position: relative;
+
+/* .slogan {
   color: #fff;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-}
-.overlay {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #222222;
-  opacity: 0.73;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
+  z-index: 1;
+  align-items: center;
+  width: 70%;
+  /* position: absolute; */
+/* }
 .banner {
+  transform-style: preserve-3d;
   position: relative;
-  background-attachment: fixed;
-  background-position: 50% 50%;
+
+  height: 200px;
+  /* background-attachment: fixed; */
+/* background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-}
-.banner1 {
-  background-image: url('/docs/1.jpg');
-}
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 2px; */
+/* transform-style: preserve-3d; */
+/* } */
 .banner2 {
   background-image: url('/docs/4.jpg');
 }
@@ -95,11 +94,41 @@ ul {
   background-image: url('/docs/2.jpg');
 }
 .sec1 {
-  height: 200px;
+  height: 1000px;
   width: 500px;
   background-color: rgb(238, 199, 199);
 }
-.sec1 {
-  overflow-x: auto;
-  border: 1px solid black;
+main {
+  /* display: flex-row; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+section {
+  display: flex;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  color: white;
+}
+section h1 {
+  text-align: center;
+}
+
+.banner1 {
+  /* background-size: 100%; */
+
+  background-image: url('/docs/3.jpg');
+  color: rgb(226, 132, 103);
+  /* background-color: #222222; */
+  /* opacity: 0.73; */
+  /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+}
+.banner {
+  background-size: cover;
+  background-attachment: fixed;
 }
