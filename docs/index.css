@@ -98,13 +98,13 @@ ul {
   width: 500px;
   background-color: rgb(238, 199, 199);
 }
-main {
+/* main {
   /* display: flex-row; */
-  overflow-x: hidden;
+/* overflow-x: hidden;
   overflow-y: auto;
-  perspective: 2px;
-}
-section {
+  perspective: 2px; */
+/* } */
+.banner {
   display: flex;
   transform-style: preserve-3d;
   position: relative;
@@ -114,9 +114,6 @@ section {
   align-items: center;
   justify-content: center;
   color: white;
-}
-section h1 {
-  text-align: center;
 }
 
 .banner1 {
