@@ -7,6 +7,7 @@ p {
 body {
   margin: 0px;
   font-family: Roboto Slab;
+  /* margin-top: 20x; */
   /* overflow-x: hidden; */
 }
 .header {
@@ -15,6 +16,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /* position: fixed; */
+  top: 0;
+  z-index: 2;
 }
 .icons {
   display: flex;
@@ -30,15 +34,18 @@ body {
 }
 .container {
   display: grid;
-  position: relative;
+  position: sticky;
+  top: 0px;
+  width: 100%;
   /* width: 1000px; */
-  margin: auto;
+  /* margin: auto; */
+  z-index: 2;
 }
 .navbar {
   height: 100px;
   width: 100%;
 
-  background-color: rgb(138, 192, 141);
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +69,6 @@ ul {
   /* display: flex; */
   width: 100%;
 }
-
 .banner2 {
   background-image: url('/docs/4.jpg');
 }
@@ -74,7 +80,6 @@ ul {
   width: 500px;
   background-color: rgb(238, 199, 199);
 }
-
 .slogan {
   color: #fff;
   display: flex;
@@ -90,6 +95,7 @@ ul {
   display: flex;
   transform-style: preserve-3d;
   position: relative;
+  top: -100px;
   height: 500px;
   width: 100%;
   align-items: center;
@@ -100,8 +106,10 @@ ul {
   z-index: 1;
 }
 .banner1 {
-  background-image: url('/docs/3.jpg');
-  /* transform: scale(1); */
+  background-image: url('/docs/2.jpg');
+  height: 600px;
+
+  /* margin-top: 140px; */
   /* transition: transform 0.3s;
   position: absolute;
   top: 0;
@@ -113,21 +121,21 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
   z-index: 1;
   color: white;
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-size: cover;
-  background-attachment: fixed;
+  top: -100px;
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
 }
 .bg {
   background-image: url('/docs/3.jpg');
   background-size: cover;
   content: '';
   height: 100%;
-
   width: 100%;
   z-index: -1;
   transform: scale(1);
@@ -135,14 +143,12 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: cover;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /* height: 100%; */
 }
-
 .test:hover .bg {
   overflow-x: hidden;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
