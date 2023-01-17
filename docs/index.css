@@ -74,8 +74,17 @@ ul {
 }
 .items {
   color: #fff;
-  margin: 10px;
+  /* height: 50px; */
+  width: auto;
+  padding: 20px;
+  /* margin: 10px; */
   color: #323233ac;
+  display: flex;
+  align-items: center;
+}
+.items:hover {
+  background-color: rgb(22, 43, 151);
+  color: #fff;
 }
 .imgs {
   /* display: flex; */
