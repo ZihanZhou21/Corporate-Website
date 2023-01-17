@@ -6,12 +6,13 @@ p {
 }
 body {
   margin: 0px;
-  font-family: Roboto Slab;
+  font-family: Arial, Helvetica, sans-serif;
+  /* letter-spacing: 0.15rem; */
   /* margin-top: 20x; */
   /* overflow-x: hidden; */
 }
 .header {
-  height: 40px;
+  height: 30px;
   background-color: #323233;
   width: 100%;
   display: flex;
@@ -45,21 +46,31 @@ body {
   height: 100px;
   width: 100%;
 
-  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* position: fixed; */
 }
+.navbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 透明的黑色背景 */
+  z-index: 1; /* 要在置顶元素上面 */
+}
 .logo {
   display: flex;
   align-items: center;
+  z-index: 3;
 }
 ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin-right: 10%;
+  z-index: 2;
 }
 .items {
   color: #fff;
@@ -106,7 +117,7 @@ ul {
   z-index: 1;
 }
 .banner1 {
-  background-image: url('/docs/2.jpg');
+  background-image: url('/docs/5.jpg');
   height: 600px;
 
   /* margin-top: 140px; */
