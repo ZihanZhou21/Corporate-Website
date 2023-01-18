@@ -46,20 +46,10 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.903);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /* position: fixed; */
 }
-/* .navbg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.82); /* 透明的黑色背景 */
-/* z-index: 1; 要在置顶元素上面 */
-/* } */
-
 .logo {
   display: flex;
   align-items: center;
@@ -69,21 +59,22 @@ ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin-right: 10%;
   z-index: 2;
+  padding: 0px;
 }
 .items {
   color: #fff;
+  font-weight: 600;
   /* height: 50px; */
   width: auto;
-  padding: 20px;
+  padding: 25px 20px;
   /* margin: 10px; */
   color: #323233ac;
   display: flex;
   align-items: center;
 }
 .items:hover {
-  background-color: rgb(22, 43, 151);
+  background-color: #556694;
   color: #fff;
 }
 .imgs {
