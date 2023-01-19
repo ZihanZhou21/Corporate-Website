@@ -41,7 +41,7 @@ body {
   z-index: 2;
 }
 .navbar {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.342);
   height: 100px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.903);
@@ -81,6 +81,17 @@ ul {
   /* display: flex; */
   width: 100%;
 }
+.bannerContainer {
+  /* transform: translateY(-100px); */
+  /* position: relative; */
+  /* top: -100px; */
+  /* clear: both; */
+  /* display: flex-row; */
+  /* bottom: -100px; */
+  /* overflow: hidden; */
+  /* margin-bottom: -100px; */
+}
+
 .banner2 {
   background-image: url('/docs/4.jpg');
 }
@@ -88,8 +99,11 @@ ul {
   background-image: url('/docs/2.jpg');
 }
 .sec1 {
+  display: flex;
   height: 1000px;
-  width: 500px;
+  /* position: absolute; */
+
+  /* width: 500px; */
   background-color: rgb(238, 199, 199);
 }
 .slogan {
@@ -106,21 +120,22 @@ ul {
 .banner {
   display: flex;
   transform-style: preserve-3d;
-  position: relative;
-  top: -100px;
+  /* position: relative; */
+  /* top: 0px; */
   height: 500px;
   width: 100%;
   align-items: center;
   justify-content: center;
   color: white;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   z-index: 1;
 }
 .banner1 {
   background-image: url('/docs/5.jpg');
-  height: 600px;
-
+  height: 700px;
+  /* position: relative; */
+  /* top: -100px; */
   /* margin-top: 140px; */
   /* transition: transform 0.3s;
   position: absolute;
@@ -130,16 +145,15 @@ ul {
   height: 100%; */
 }
 .test {
+  /* position: absolute; */
   display: flex;
   align-items: center;
   justify-content: center;
   /* transform-style: preserve-3d; */
   z-index: 1;
   color: white;
-  position: relative;
   height: 500px;
   overflow: hidden;
-  top: -100px;
   /* background-size: cover; */
   /* background-attachment: fixed; */
 }
@@ -152,7 +166,7 @@ ul {
   z-index: -1;
   transform: scale(1);
   transition: transform 1s;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   /* overflow-x: hidden; */
